@@ -7,9 +7,9 @@ export function returnProjects() {
 }
 
 export const LIKE_PROJECT = 'LIKE_PROJECT';
-export function likeProject(id) {
+export function likeProject(title) {
 	return {
 		type: LIKE_PROJECT,
-		id
+		title
 	}
 }
