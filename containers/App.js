@@ -16,6 +16,10 @@ import Project from '../components/project';
 export default class App extends Component {
 	render() {
 		const { reduxState, projects, dispatch } = this.props;
+
+		// Make all action creators available to components via props and
+		// bind to redux dipatch function http://rackt.github.io/redux/docs/api/bindActionCreators.html
+		
 		const actions = bindActionCreators(actionCreators, dispatch);
 
 		return (
