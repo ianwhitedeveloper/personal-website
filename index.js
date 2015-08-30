@@ -1,7 +1,9 @@
+import 'babel-core/polyfill';
+
 import React from 'react';
-import App from './views/App';
+import Root from './containers/Root';
 
 React.render(
-  <App />,
+  <Root />,
   document.getElementById('root')
 );
