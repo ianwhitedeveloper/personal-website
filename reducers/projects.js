@@ -1,4 +1,4 @@
-var initialState = [{title: 'UPS Houston', likes: 0}, {title: 'UPS Other', likes: 0}];
+var initialState = [];
 
 export function projects(state = initialState, action) {
   switch (action.type) {

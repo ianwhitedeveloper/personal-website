@@ -4,7 +4,18 @@ import { Provider } from 'react-redux';
 import configureStore from '../store/configureStore';
 import App from './App';
 
-const store = configureStore();
+//////////////////////////////////////////////////////////
+// This temporary state is mocking what would come from //
+// server side rendered state to rehydrate the client   //
+//////////////////////////////////////////////////////////
+let temporaryInitialState = {
+  projects: [
+    {title: 'UPS Houston', likes: 0},
+    {title: 'UPS Other', likes: 0}
+  ]
+};
+
+const store = configureStore(temporaryInitialState);
 
 export default class Root extends Component {
   render() {
