@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actionCreators';
-import Project from '../components/project';
+import ProjectSection from '../components/ProjectSection';
 
 @connect((state /*, props*/) => {
     // This is our select function that will extract from the state the data slice we want to expose
@@ -24,11 +24,7 @@ export default class App extends Component {
 
 		return (
 			<div>
-				<ul>
-					{projects.map((project, i) => {
-						return <Project key={i} project={project} {...actions} />
-					})}
-				</ul>
+				<ProjectSection projects={projects} actions={actions} />
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
