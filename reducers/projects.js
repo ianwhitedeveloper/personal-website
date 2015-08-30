@@ -1,6 +1,4 @@
-var initialState = [];
-
-export function projects(state = initialState, action) {
+export function projects(state = [], action) {
   switch (action.type) {
     case 'RETURN_PROJECTS':
       return {
