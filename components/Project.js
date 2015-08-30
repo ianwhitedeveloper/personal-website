@@ -1,4 +1,4 @@
-import React, { Component, PropTypes, findDOMNode } from 'react';
+import React, { Component, PropTypes } from 'react';
 import dispatch from 'redux';
 
 export default class Project extends Component {
@@ -13,4 +13,9 @@ export default class Project extends Component {
 			</li>
 		);
 	}
+}
+
+Project.propTypes = {
+	likeProject: PropTypes.func.isRequired,
+	project: PropTypes.object.isRequired
 }
