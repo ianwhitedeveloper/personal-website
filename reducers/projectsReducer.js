@@ -1,4 +1,4 @@
-export function projects(state = [], action) {
+export default function projects(state = [], action) {
   switch (action.type) {
     case 'RETURN_PROJECTS':
       return {

@@ -24,6 +24,11 @@ let temporaryInitialState = {
       imgSrc: 'http://25.media.tumblr.com/tumblr_lhlsz4Y90n1qc63sno1_500.jpg',
       likes: 0
     }
+  ],
+  skills: [
+    'ruby',
+    'javascript',
+    'html'
   ]
 };
 

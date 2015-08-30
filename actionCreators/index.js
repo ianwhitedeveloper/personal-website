@@ -13,3 +13,17 @@ export function likeProject(title) {
 		title
 	}
 }
+
+export const SORT_SKILLS_ASC = 'SORT_SKILLS_ASC';
+export function sortSkillsAsc() {
+	return {
+		type: SORT_SKILLS_ASC
+	}
+}
+
+export const SORT_SKILLS_DESC = 'SORT_SKILLS_DESC';
+export function sortSkillsDesc() {
+	return {
+		type: SORT_SKILLS_DESC
+	}
+}

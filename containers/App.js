@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actionCreators';
 import ProjectSection from '../components/ProjectSection';
+import SkillsSection from '../components/SkillsSection';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The "connect" decorator takes as its only parameter, a function that will select which slice of your    //
@@ -25,7 +26,7 @@ import ProjectSection from '../components/ProjectSection';
 
 export default class App extends Component {
 	render() {
-		const { reduxState, projects, dispatch } = this.props;
+		const { reduxState, projects, skills, dispatch } = this.props;
 
 		/*Make all action creators available to components via props 
 		bind to redux dipatch function http://rackt.github.io/redux/docs/api/bindActionCreators.html*/
@@ -34,6 +35,7 @@ export default class App extends Component {
 		return (
 			<div>
 				<ProjectSection projects={projects} actions={actions} />
+				<SkillsSection skills={skills} {...actions} />
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
@@ -44,7 +46,8 @@ export default class App extends Component {
 
 App.propTypes = {
 	reduxState: PropTypes.object.isRequired,
-	projects: PropTypes.array.isRequired
+	projects: PropTypes.array.isRequired,
+	skills: PropTypes.array.isRequired
 }
 
 ///////////////////////////////////////////////////
@@ -67,5 +70,6 @@ App.propTypes = {
 /////////////////////////////////////////////////////////////////
 export default connect(state => ({
   reduxState: state,
-  projects: state.projects
+  projects: state.projects,
+  skills: state.skills
 }))(App);
