@@ -10,8 +10,20 @@ import App from './App';
 //////////////////////////////////////////////////////////
 let temporaryInitialState = {
   projects: [
-    {title: 'UPS Houston', likes: 0},
-    {title: 'UPS Other', likes: 0}
+    {
+      title: 'UPS Houston',
+      description: 'Sole developer yadda yadda yadda.......',
+      url: 'https://houston.ups.com',
+      imgSrc: 'http://25.media.tumblr.com/tumblr_lhlsz4Y90n1qc63sno1_500.jpg',
+      likes: 0
+    },
+    {
+      title: 'UPS Other',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+      url: 'http://ups.com',
+      imgSrc: 'http://25.media.tumblr.com/tumblr_lhlsz4Y90n1qc63sno1_500.jpg',
+      likes: 0
+    }
   ]
 };
 
