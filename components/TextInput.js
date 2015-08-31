@@ -27,16 +27,6 @@ export default class TextInput extends Component {
     this.props.filterSkills('');
   }
 
-  // childContextTypes: {
-  //   muiTheme: React.PropTypes.object
-  // }
-
-  // getChildContext() {
-  //   return {
-  //     muiTheme: ThemeManager.getCurrentTheme()
-  //   };
-  // }
-
   render() {
     const { filterSkills, placeholder } = this.props;
 
