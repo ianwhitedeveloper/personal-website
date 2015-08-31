@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import mui from 'material-ui';
 
 let RaisedButton = mui.RaisedButton;
+let TextField = mui.TextField;
 
 const ThemeManager = new mui.Styles.ThemeManager();
 
@@ -36,17 +37,15 @@ export default class TextInput extends Component {
   // }
 
   render() {
-    const { filterSkills } = this.props;
+    const { filterSkills, placeholder } = this.props;
 
     return (
       <div>
-        <input 
-          type="text"
-          placeholder={this.props.placeholder}
-          autoFocus="true"
+        <TextField
+          floatingLabelText={placeholder}
           value={this.state.text}
-          onChange={::this.handleChange}
-          ref='input' />
+          onChange={::this.handleChange} />
+        
         <RaisedButton onClick={::this.clearInput} label="Primary" primary={true} label="×" />
       </div>
     );
