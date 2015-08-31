@@ -7,11 +7,11 @@ export default class ProjectSection extends Component {
 
 		return (
 			<section>
-				<ul>
+				<div>
 					{projects.map((project, i) => {
 						return <Project key={i} project={project} {...actions} />
 					})}
-				</ul>
+				</div>
 			</section>
 		);
 	}
