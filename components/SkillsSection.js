@@ -30,6 +30,5 @@ export default class SkillsSection extends Component {
 
 SkillsSection.propTypes = {
 	skills: PropTypes.array.isRequired,
-	sortSkillsAsc: PropTypes.func.isRequired,
-	sortSkillsDesc: PropTypes.func.isRequired
+	actions: PropTypes.object.isRequired
 }
