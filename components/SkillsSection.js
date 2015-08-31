@@ -7,7 +7,7 @@ export default class SkillsSection extends Component {
 
 		return (
 			<section>
-				<TextInput {...actions} placeholder='testing' />
+				<TextInput {...actions} placeholder='Search...' />
 				<ul>
 					{skills.map((skill, i) => {
 						if (skill.show) {

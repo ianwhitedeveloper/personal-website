@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actionCreators';
 import ProjectSection from '../components/ProjectSection';
 import SkillsSection from '../components/SkillsSection';
+import EducationSection from '../components/EducationSection';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The "connect" decorator takes as its only parameter, a function that will select which slice of your    //
@@ -36,6 +37,7 @@ export default class App extends Component {
 			<div>
 				<ProjectSection projects={projects} actions={actions} />
 				<SkillsSection skills={skills} actions={actions} />
+				<EducationSection />
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
