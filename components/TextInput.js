@@ -1,4 +1,9 @@
 import React, { Component, PropTypes } from 'react';
+import mui from 'material-ui';
+
+let RaisedButton = mui.RaisedButton;
+
+const ThemeManager = new mui.Styles.ThemeManager();
 
 export default class TextInput extends Component {
 
@@ -20,6 +25,16 @@ export default class TextInput extends Component {
     this.props.filterSkills('');
   }
 
+  // childContextTypes: {
+  //   muiTheme: React.PropTypes.object
+  // }
+
+  // getChildContext() {
+  //   return {
+  //     muiTheme: ThemeManager.getCurrentTheme()
+  //   };
+  // }
+
   render() {
     const { filterSkills } = this.props;
 
@@ -32,7 +47,7 @@ export default class TextInput extends Component {
           value={this.state.text}
           onChange={::this.handleChange}
           ref='input' />
-        <button onClick={::this.clearInput}>×</button>
+        <RaisedButton onClick={::this.clearInput} label="Primary" primary={true} label="×" />
       </div>
     );
   }

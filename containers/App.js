@@ -6,6 +6,9 @@ import ProjectSection from '../components/ProjectSection';
 import SkillsSection from '../components/SkillsSection';
 import EducationSection from '../components/EducationSection';
 
+import mui from 'material-ui';
+let ThemeManager = new mui.Styles.ThemeManager();
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The "connect" decorator takes as its only parameter, a function that will select which slice of your    //
 // state you want to expose to your component. This function is logically called a "selector" and          //
@@ -26,12 +29,19 @@ import EducationSection from '../components/EducationSection';
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default class App extends Component {
+	getChildContext() { 
+	  return {
+	    muiTheme: ThemeManager.getCurrentTheme()
+	  };
+	}
+	
 	render() {
 		const { reduxState, projects, skills, dispatch } = this.props;
 
 		/*Make all action creators available to components via props 
 		bind to redux dipatch function http://rackt.github.io/redux/docs/api/bindActionCreators.html*/
 		const actions = bindActionCreators(actionCreators, dispatch);
+
 
 		return (
 			<div>
@@ -45,6 +55,10 @@ export default class App extends Component {
 		);
 	}
 }
+
+App.childContextTypes = {
+  muiTheme: React.PropTypes.object
+};
 
 App.propTypes = {
 	reduxState: PropTypes.object.isRequired,
