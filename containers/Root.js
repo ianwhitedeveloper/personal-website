@@ -26,9 +26,10 @@ let temporaryInitialState = {
     }
   ],
   skills: [
-    'ruby',
-    'javascript',
-    'html'
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
+    {title: 'html', show: true}
   ]
 };
 

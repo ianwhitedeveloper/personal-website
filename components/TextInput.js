@@ -10,20 +10,24 @@ export default class TextInput extends Component {
   }
 
   handleChange(e) {
-    this.setState({ text: e.target.value });
-    this.props.filterSkills(this.state.text);
+    let value = e.target.value.trim();
+    this.setState({ text: value });
+    this.props.filterSkills(value);
   }
 
   render() {
     const { filterSkills } = this.props;
 
     return (
-      <input 
-        type="text"
-        placeholder={this.props.placeholder}
-        autoFocus="true"
-        value={this.state.text}
-        onChange={::this.handleChange} />
+      <div>
+        <input 
+          type="text"
+          placeholder={this.props.placeholder}
+          autoFocus="true"
+          value={this.state.text}
+          onChange={::this.handleChange}
+          ref='input' />
+      </div>
     );
   }
 }

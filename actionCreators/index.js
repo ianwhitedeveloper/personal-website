@@ -27,3 +27,11 @@ export function sortSkillsDesc() {
 		type: SORT_SKILLS_DESC
 	}
 }
+
+export const FILTER_SKILLS = 'FILTER_SKILLS';
+export function filterSkills(q) {
+	return {
+		type: FILTER_SKILLS,
+		q
+	}
+}

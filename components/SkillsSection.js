@@ -10,23 +10,19 @@ export default class SkillsSection extends Component {
 	  };
 	}
 
-	filterSkills(q) {
-		this.setState({ skills: ['ruby'] });
-	}
-
 	render() {
-		const { skills, sortSkillsAsc, sortSkillsDesc, filterSkills } = this.props;
+		const { skills, filterSkills, actions } = this.props;
 
 		return (
 			<section>
-				<TextInput filterSkills={this.filterSkills} placeholder='testing' />
+				<TextInput {...actions} placeholder='testing' />
 				<ul>
 					{skills.map((skill, i) => {
-						return <li key={i}>{skill}</li>
+						if (skill.show) {
+							return <li key={i}>{skill.title}</li>
+						}
 					})}
 				</ul>
-				<button onClick={sortSkillsAsc}>Sort Skills ASC</button>
-				<button onClick={sortSkillsDesc}>Sort Skills DESC</button>
 			</section>
 		);
 	}

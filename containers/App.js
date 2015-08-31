@@ -35,7 +35,7 @@ export default class App extends Component {
 		return (
 			<div>
 				<ProjectSection projects={projects} actions={actions} />
-				<SkillsSection skills={skills} {...actions} />
+				<SkillsSection skills={skills} actions={actions} />
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
