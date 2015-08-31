@@ -1,12 +1,25 @@
 import React, {Component, PropTypes} from 'react';
-import Project from '../components/Project';
+import TextInput from './TextInput'
 
 export default class SkillsSection extends Component {
+	constructor(props, context) {
+	  super(props, context);
+	  this.state = {
+	    query: '',
+	    skills: props.skills
+	  };
+	}
+
+	filterSkills(q) {
+		this.setState({ skills: ['ruby'] });
+	}
+
 	render() {
-		const { skills, sortSkillsAsc, sortSkillsDesc } = this.props;
+		const { skills, sortSkillsAsc, sortSkillsDesc, filterSkills } = this.props;
 
 		return (
 			<section>
+				<TextInput filterSkills={this.filterSkills} placeholder='testing' />
 				<ul>
 					{skills.map((skill, i) => {
 						return <li key={i}>{skill}</li>
