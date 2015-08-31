@@ -3,6 +3,7 @@ import mui from 'material-ui';
 
 let RaisedButton = mui.RaisedButton;
 let TextField = mui.TextField;
+let FontIcon = mui.FontIcon;
 
 const ThemeManager = new mui.Styles.ThemeManager();
 
@@ -40,13 +41,12 @@ export default class TextInput extends Component {
     const { filterSkills, placeholder } = this.props;
 
     return (
-      <div>
+      <div style={{position: 'relative'}}>
+        <FontIcon onClick={::this.clearInput} style={{zIndex: '2', cursor: 'pointer', position: 'absolute', top: '50%', left: '237px'}} className="material-icons" hoverColor='#ddd'>close</FontIcon>
         <TextField
           floatingLabelText={placeholder}
           value={this.state.text}
           onChange={::this.handleChange} />
-        
-        <RaisedButton onClick={::this.clearInput} label="Primary" primary={true} label="×" />
       </div>
     );
   }
