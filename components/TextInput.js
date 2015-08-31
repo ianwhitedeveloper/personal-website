@@ -15,6 +15,11 @@ export default class TextInput extends Component {
     this.props.filterSkills(value);
   }
 
+  clearInput(e) {
+    this.setState({ text: '' });
+    this.props.filterSkills('');
+  }
+
   render() {
     const { filterSkills } = this.props;
 
@@ -27,6 +32,7 @@ export default class TextInput extends Component {
           value={this.state.text}
           onChange={::this.handleChange}
           ref='input' />
+        <button onClick={::this.clearInput}>×</button>
       </div>
     );
   }
