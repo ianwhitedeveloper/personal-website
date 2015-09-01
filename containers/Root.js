@@ -29,6 +29,21 @@ let temporaryInitialState = {
     {title: 'ruby', show: true},
     {title: 'Rubygroovy', show: true},
     {title: 'javascript', show: true},
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
+    {title: 'ruby', show: true},
+    {title: 'Rubygroovy', show: true},
+    {title: 'javascript', show: true},
     {title: 'html', show: true}
   ]
 };

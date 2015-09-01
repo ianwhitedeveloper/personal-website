@@ -6,15 +6,15 @@ export default class SkillsSection {
 		const { skills, filterSkills, actions } = this.props;
 
 		return (
-			<section>
+			<section className='row'>
 				<TextInput {...actions} placeholder='Search...' />
-				<ul>
+				<div style={{textAlign: 'center'}}>
 					{skills.map((skill, i) => {
 						if (skill.show) {
-							return <li key={i}>{skill.title}</li>
+							return <div className='skill' style={{padding: '5px 10px', margin: '2px auto', color: '#000', float: 'left'}} key={i}>{skill.title}</div>
 						}
 					})}
-				</ul>
+				</div>
 			</section>
 		);
 	}

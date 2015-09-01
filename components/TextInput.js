@@ -32,8 +32,9 @@ export default class TextInput extends Component {
 
     return (
       <div style={{position: 'relative'}}>
-        <FontIcon onClick={::this.clearInput} style={{zIndex: '2', cursor: 'pointer', position: 'absolute', top: '50%', left: '237px'}} className="material-icons" hoverColor='#ddd'>close</FontIcon>
+        <FontIcon onClick={::this.clearInput} style={{zIndex: '2', cursor: 'pointer', position: 'absolute', top: '50%', right: '0'}} className="material-icons" hoverColor='#ddd'>close</FontIcon>
         <TextField
+          style={{width: '100%'}}
           floatingLabelText={placeholder}
           value={this.state.text}
           onChange={::this.handleChange} />
