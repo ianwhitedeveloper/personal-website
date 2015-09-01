@@ -1,3 +1,6 @@
+require('./assets/global.styl');
+
+
 import 'babel-core/polyfill';
 
 import React from 'react';
