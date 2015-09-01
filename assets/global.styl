@@ -4,14 +4,22 @@ body
 	max-width 1200px
 	margin 0 auto
 	
-.skill
-	transition: background-color 0.5s ease;
-	transition: color 0.5s ease;
-	width 50%
+section
+	margin 50px 0
 	
-	&:hover
-		color #000
-		background-color #ddd
+.skill
+	width 50%
+	transition: background-color 0.5s ease;
+	transition: color 0.2s ease;
+	color #000
+	
+	&:hover,
+	&:active,
+	&:focus
+		transition: background-color 0.5s ease;
+		transition: color 0.2s ease;
+		background-color #00BCD4
+		color #fff
 		
 @media (min-width: 996px) 
 	.skill 

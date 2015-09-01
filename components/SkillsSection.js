@@ -11,7 +11,7 @@ export default class SkillsSection {
 				<div style={{textAlign: 'center'}}>
 					{skills.map((skill, i) => {
 						if (skill.show) {
-							return <div className='skill' style={{padding: '5px 10px', margin: '2px auto', color: '#000', float: 'left'}} key={i}>{skill.title}</div>
+							return <div className='skill' style={{padding: '10px 10px', margin: '10px auto', float: 'left'}} key={i}>{skill.title}</div>
 						}
 					})}
 				</div>
