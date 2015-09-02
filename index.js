@@ -1,4 +1,4 @@
-require('./assets/global.styl');
+require('./assets/styles/global.styl');
 
 
 import 'babel-core/polyfill';
