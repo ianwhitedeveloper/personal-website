@@ -13,9 +13,9 @@ section
 	transition color 0.2s ease, background-color 0.5s ease
 	color #000
 	
-	&:hover,
-	&:active,
-	&:focus
+	&hover,
+	&active,
+	&focus
 		transition color 0.2s ease, background-color 0.5s ease
 		background-color #00BCD4
 		color #fff
@@ -35,13 +35,31 @@ section
 	p, h1
 		color #fff
 		align-self center
-		text-shadow: 3px 3px 3px #000, -1px -1px 3px #000,   1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 3px #000
+		text-shadow 3px 3px 3px #000, -1px -1px 3px #000,   1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 3px #000
 		
 .mks
 	background #AAC0D5 url('../images/makersquare-logo.png') no-repeat center center
 
 .ut
 	background #C7AF9F url('../images/ut-seal.png') no-repeat center center
+	
+.example-enter 
+  opacity 0.01
+
+
+.example-enter.example-enter-active 
+  opacity 1
+  transition opacity .5s ease-in
+
+
+.example-leave 
+  opacity 1
+
+
+.example-leave.example-leave-active 
+  opacity 0.01
+  transition opacity .5s ease-in
+
 		
 @media (min-width 996px) 
 	.skill 
