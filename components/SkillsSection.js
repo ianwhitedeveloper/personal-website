@@ -15,12 +15,14 @@ export default class SkillsSection {
 
 		return (
 
-			<section className='row'>
-				<TextInput {...actions} placeholder='Search...' />
-				<div style={{textAlign: 'center'}}>
-					<ReactCSSTransitionGroup transitionName="example">
-	          {filteredSkills}
-	        </ReactCSSTransitionGroup>
+			<section style={{padding: '0 15px', boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)'}}>
+				<div className='row'>
+					<TextInput {...actions} placeholder='Search...' />
+					<div style={{textAlign: 'center'}}>
+						<ReactCSSTransitionGroup transitionName="example">
+		          {filteredSkills}
+		        </ReactCSSTransitionGroup>
+					</div>
 				</div>
 			</section>
 		);
