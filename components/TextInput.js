@@ -31,7 +31,7 @@ export default class TextInput extends Component {
     const { filterSkills, placeholder } = this.props;
 
     return (
-      <div style={{position: 'relative'}}>
+      <div id='search_input' style={{position: 'relative'}}>
         <FontIcon onClick={::this.clearInput} style={{zIndex: '2', cursor: 'pointer', position: 'absolute', top: '50%', right: '0'}} className="material-icons" hoverColor='#ddd'>close</FontIcon>
         <TextField
           style={{width: '100%'}}
