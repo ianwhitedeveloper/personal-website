@@ -20,9 +20,9 @@ section
 	transition color 0.2s ease, background-color 0.5s ease
 	color #000
 	
-	&:hover,
-	&:active,
-	&:focus
+	&hover,
+	&active,
+	&focus
 		transition color 0.2s ease, background-color 0.5s ease
 		background-color #00BCD4
 		color #fff
@@ -66,20 +66,16 @@ section
 	opacity 0.01
 	transition opacity .5s, ease-in
 
+.projects, .project
+	display -webkit-flex
+	display -ms-flexbox
+	display flex
+	
 .projects
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+	-webkit-flex-wrap wrap
+	-ms-flex-wrap wrap
+	flex-wrap wrap
 
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-
-.project
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-		
 @media (min-width 996px) 
 	.skill 
 		width 25%
