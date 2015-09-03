@@ -14,21 +14,19 @@ export default class Project extends Component {
 		const { likeProject, project } = this.props;
 
 		return (
-			<div className='col-md-6'>
+			<div className='project col-md-6'>
 
 				<Card>
 				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
 				    <img src={project.imgSrc} />
 				  </CardMedia>
-				  <CardActions style={{textAlign: 'center'}}>
-						<FlatButton primary={true} style={{width: '100%', display: 'block'}} onClick={() => likeProject(project.title)} label='Like!' />
+				  <CardActions style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+						<FlatButton primary={true}  onClick={() => likeProject(project.title)} label='Like!' />
+						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit!' />
 				  </CardActions>
-				  <CardText>
+				  <CardText className='project_description' style={{textAlign: 'center', }}>
 				    {project.description}
 				  </CardText>
-				  <CardActions style={{textAlign: 'center'}}>
-						<FlatButton secondary={true} linkButton={true} href={project.url} label='Visit!' />
-				  </CardActions>
 				</Card>
 
 			</div>

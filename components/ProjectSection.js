@@ -7,7 +7,7 @@ export default class ProjectSection extends Component {
 
 		return (
 			<section>
-				<div className='row'>
+				<div className='projects row'>
 					{projects.map((project, i) => {
 						return <Project key={i} project={project} {...actions} />
 					})}
