@@ -45,9 +45,11 @@ export default class App extends Component {
 
 
 		return (
-			<div>
+			<main>
 				<div className='row'>
-					<Header />
+					<div className='col-xs-12'>
+						<Header />
+					</div>
 				</div>
 				<div className='projects row'>
 					<ProjectSection projects={projects} actions={actions} />
@@ -57,11 +59,13 @@ export default class App extends Component {
 						<SkillsSection skills={skills} actions={actions} />
 					</div>
 				</div>
-				<EducationSection />
+				<div className='row'>
+					<EducationSection />
+				</div>
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
-			</div>
+			</main>
 		);
 	}
 }

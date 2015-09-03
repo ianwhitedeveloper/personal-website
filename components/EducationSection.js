@@ -3,7 +3,7 @@ import React from 'react';
 export default class EducationSection {
 	render() {
 		return (
-			<section className='row'>
+			<section>
 				<div className='col-sm-6'>
 					<div className='mks'>
 						<h1>MakerSquare</h1>

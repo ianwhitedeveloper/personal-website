@@ -12,7 +12,6 @@ section
 [class*="col-"]
 	padding-top 15px
 	padding-bottom 15px
-	
 
 #search_input
 	label 
@@ -71,7 +70,21 @@ section
 	opacity 0.01
 	transition opacity .5s, ease-in
 
+header
+	figcaption
+		font-size 2.5em
+		
+		p
+			margin 0
+			
+			&:nth-child(2)
+				font-size 0.6em
+
 @media (min-width 996px) 
 	.skill 
 		flex 1 0 25%
+
+@media (min-width 768px)
+	header figcaption
+		font-size 3.5em
 		
