@@ -12,7 +12,7 @@ let temporaryInitialState = {
   projects: [
     {
       title: 'UPS Houston',
-      description: 'As the sole developer for this project, I worked with art, account and creative departments to bring this campaign to life. Utilized Grunt, Vagrant, Yeoman, Bootstrap, Javascript and jQuery on the front end. Integrated backend database and authentication technologies including Silverpop and Linkedin REST APIs. Fully responsive. Completed project on time and to full client satisfaction. https://github.com/Iawhite76/generator-webapp-vagrant: Upon completion of this project, I created a Yeoman generator for the UPS development team so that future projects of this scope could be more quickly and efficiently developed.',
+      description: 'As the sole developer for this project, I worked with art, account and creative departments to bring this campaign to life. Grunt, Vagrant, Yeoman, Bootstrap, Javascript and jQuery are used on the front end with integration to backend database and authentication technologies via Silverpop and Linkedin REST APIs. Fully responsive. Completed project on time and to full client satisfaction. Upon completion of this project, I created a Yeoman generator for the UPS development team so that future projects of this scope could be more quickly and efficiently developed. Code can be found here: https://github.com/Iawhite76/generator-webapp-vagrant',
       url: 'https://houston.ups.com',
       imgSrc: '../assets/images/houston.jpg',
       likes: 0
@@ -20,7 +20,7 @@ let temporaryInitialState = {
     {
       title: 'UPS Peak',
       description: 'Responsible for development of a majority of the front end styling based off Photoshop comps delivered by creative department. I volunteered to join the team responsible for this site to help finish project during busy holiday season. I was able to quickly get up to speed and contribute helping to complete the project by the deadline.',
-      url: 'http://ups.com',
+      url: 'https://wishesdelivered.ups.com/#all-wishes',
       imgSrc: '../assets/images/peak.jpg',
       likes: 0
     }
