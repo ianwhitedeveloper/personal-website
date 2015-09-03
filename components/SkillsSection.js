@@ -11,7 +11,7 @@ export default class SkillsSection {
 					if (skill.show) {
 						return <div className='skill' style={{padding: '10px 10px', margin: '10px auto'}} key={i}>{skill.title}</div>
 					}
-				}.bind(this));
+				});
 
 		return (
 
