@@ -7,7 +7,7 @@ export default class ProjectSection extends Component {
 
 		return (
 			<section>
-				<div className='projects row'>
+				<div style={{display: 'flex', flexWrap: 'wrap'}}>
 					{projects.map((project, i) => {
 						return <Project key={i} project={project} {...actions} />
 					})}

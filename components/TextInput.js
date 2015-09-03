@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import mui from 'material-ui';
 
-let RaisedButton = mui.RaisedButton;
-let TextField = mui.TextField;
-let FontIcon = mui.FontIcon;
+const RaisedButton = mui.RaisedButton;
+const TextField = mui.TextField;
+const FontIcon = mui.FontIcon;
 
 const ThemeManager = new mui.Styles.ThemeManager();
 

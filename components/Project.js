@@ -14,7 +14,7 @@ export default class Project extends Component {
 		const { likeProject, project } = this.props;
 
 		return (
-			<div className='project col-md-6'>
+			<div style={{display: 'flex', flexWrap: 'wrap'}} className='col-md-6'>
 
 				<Card>
 				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
