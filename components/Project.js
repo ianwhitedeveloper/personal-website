@@ -2,7 +2,12 @@ import React, { Component, PropTypes } from 'react';
 import dispatch from 'redux';
 import mui from 'material-ui';
 
-const Paper = mui.Paper;
+const Card = mui.Card;
+const CardMedia = mui.CardMedia;
+const CardText = mui.CardText;
+const CardTitle = mui.CardTitle;
+const CardActions = mui.CardActions;
+const FlatButton = mui.FlatButton;
 
 export default class Project extends Component {
 	render() {
@@ -10,18 +15,22 @@ export default class Project extends Component {
 
 		return (
 			<div className='col-md-6'>
-				<Paper style={{textAlign: 'center'}} zDepth={4}>
-					<a href={project.url} target='_blank'>
-						<div>
-							<h1>Project title:{project.title}</h1>
-							<img width='100px' src={project.imgSrc} />
-							<p>{project.description}</p>
-						</div>
-					</a>
-					
-					<h2>Likes: {project.likes}</h2>
-					<button onClick={() => likeProject(project.title)}>Like!</button>
-				</Paper>
+
+				<Card>
+				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
+				    <img src={project.imgSrc} />
+				  </CardMedia>
+				  <CardActions style={{textAlign: 'center'}}>
+						<FlatButton primary={true} style={{width: '100%', display: 'block'}} onClick={() => likeProject(project.title)} label='Like!' />
+				  </CardActions>
+				  <CardText>
+				    {project.description}
+				  </CardText>
+				  <CardActions style={{textAlign: 'center'}}>
+						<FlatButton secondary={true} linkButton={true} href={project.url} label='Visit!' />
+				  </CardActions>
+				</Card>
+
 			</div>
 		);
 	}
