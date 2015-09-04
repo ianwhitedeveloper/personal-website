@@ -6,6 +6,7 @@ import ProjectSection from '../components/ProjectSection';
 import SkillsSection from '../components/SkillsSection';
 import EducationSection from '../components/EducationSection';
 import Header from '../components/Header';
+import ContactSection from '../components/ContactSection';
 
 import mui from 'material-ui';
 let ThemeManager = new mui.Styles.ThemeManager();
@@ -51,17 +52,27 @@ export default class App extends Component {
 						<Header />
 					</div>
 				</div>
+
 				<div className='projects row'>
 					<ProjectSection projects={projects} actions={actions} />
 				</div>
+
 				<div className='row'>
 					<div className='col-xs-12'>
 						<SkillsSection skills={skills} actions={actions} />
 					</div>
 				</div>
+
 				<div className='row'>
 					<EducationSection />
 				</div>
+
+				<div className='row'>
+					<div className='col-xs-12'>
+						<ContactSection />
+					</div>
+				</div>
+
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
