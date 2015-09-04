@@ -21,7 +21,7 @@ export default class Header {
 				<figure className='animated flipInY' style={logoStyles}>
 				</figure>
 				<figcaption className='animated flipInX' style={{textAlign: 'right', maxWidth: '50%', alignSelf: 'center', fontFamily: '"Amatic SC", cursive'}}>
-					<p>Hi. My name is Ian White and I'm a full stack web developer based in <span style={{color: '#B0BEC5', fontSize: '1.2em', textShadow: '1px 1px 1px rgba(0, 0, 0, .5)'}}>Austin, TX.</span></p>
+					<h1 style={{fontSize: '1em'}}>Hi. My name is Ian White and I'm a full stack web developer based in <span style={{color: '#B0BEC5', fontSize: '1.2em', textShadow: '1px 1px 1px rgba(0, 0, 0, .5)'}}>Austin, TX.</span></h1>
 					<p>I enjoy creating things with code!</p>
 				</figcaption>
 			</header>

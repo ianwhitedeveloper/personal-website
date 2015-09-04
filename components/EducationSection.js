@@ -4,6 +4,9 @@ export default class EducationSection {
 	render() {
 		return (
 			<section>
+				<div style={{textAlign: 'center'}}>
+					<h1>Education</h1>
+				</div>
 				<div className='col-sm-6'>
 					<div className='mks'>
 						<h1>MakerSquare</h1>
