@@ -1,5 +1,8 @@
 import React from 'react';
 import mui from 'material-ui';
+import Sticky from 'react-sticky';
+
+const AppBar = mui.AppBar;
 
 const Paper = mui.Paper;
 const logoStyles = {

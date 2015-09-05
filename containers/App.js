@@ -7,6 +7,7 @@ import SkillsSection from '../components/SkillsSection';
 import EducationSection from '../components/EducationSection';
 import Header from '../components/Header';
 import ContactSection from '../components/ContactSection';
+import AppNav from '../components/AppNav';
 
 import mui from 'material-ui';
 let ThemeManager = new mui.Styles.ThemeManager();
@@ -47,6 +48,7 @@ export default class App extends Component {
 
 		return (
 			<main>
+				<AppNav />
 				<div className='row'>
 					<div className='col-xs-12'>
 						<Header />
