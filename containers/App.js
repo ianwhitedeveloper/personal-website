@@ -55,21 +55,21 @@ export default class App extends Component {
 					</div>
 				</div>
 
-				<div className='projects row'>
+				<div id='projects' className='projects row'>
 					<ProjectSection projects={projects} actions={actions} />
 				</div>
 
-				<div className='row'>
+				<div id='skills' className='row'>
 					<div className='col-xs-12'>
 						<SkillsSection skills={skills} actions={actions} />
 					</div>
 				</div>
 
-				<div className='row'>
+				<div id='education' className='row'>
 					<EducationSection />
 				</div>
 
-				<div className='row'>
+				<div id='contact' className='row'>
 					<div className='col-xs-12'>
 						<ContactSection />
 					</div>

@@ -7,25 +7,30 @@ const LeftNav = mui.LeftNav;
 const MenuItem = mui.MenuItem;
 const styles = {
 	stickyHeader: {
-		backgroundColor: 'rgba(255, 255, 255, 0.5)'
+		backgroundColor: 'rgba(2, 119, 189, 0.8)'
 	}
 }
 const menuItems = [
   { type: MenuItem.Types.SUBHEADER, text: 'Resources' },
   {
      type: MenuItem.Types.LINK,
-     payload: 'https://github.com/callemall/material-ui',
-     text: 'GitHub'
-  },
-  {
-     text: 'Disabled',
-     disabled: true
+     payload: '/#projects',
+     text: 'Projects'
   },
   {
      type: MenuItem.Types.LINK,
-     payload: 'https://www.google.com',
-     text: 'Disabled Link',
-     disabled: true
+     payload: '/#skills',
+     text: 'Skills'
+  },
+  {
+     type: MenuItem.Types.LINK,
+     payload: '/#education',
+     text: 'Education'
+  },
+  {
+     type: MenuItem.Types.LINK,
+     payload: '/#contact',
+     text: 'Contact'
   },
 ];
 
@@ -38,7 +43,7 @@ export default class AppNav extends Component {
 		return(
 			<div>
 				<Sticky>
-					<AppBar onLeftIconButtonTouchTap={::this.handleClick} style={styles.stickyHeader} title="Title" />
+					<AppBar onLeftIconButtonTouchTap={::this.handleClick} style={styles.stickyHeader} />
 				</Sticky>
 
 				<LeftNav ref="leftNav" docked={false} menuItems={menuItems} />
