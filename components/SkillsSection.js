@@ -8,19 +8,42 @@ export default class SkillsSection {
 
 		const { skills, actions } = this.props;
 		
+		const styles = {
+			skillsMain: {
+				backgroundColor: '#fff', 
+				padding: '0 15px', 
+				boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)'
+			},
+			skillsContainer: {
+				display: 'flex', 
+				flexDirection: 'row',
+				flexWrap: 'wrap', 
+				textAlign: 'center'
+			},
+			skill: {
+				display: 'flex', 
+				flexDirection: 'row', 
+				flexWrap: 'wrap', 
+				textAlign: 'center'
+			},
+			header: {
+				textAlign: 'center'
+			}
+		}
+
 		return (
 			<section>
-				<div style={{textAlign: 'center'}}>
+				<div style={styles.header}>
 					<h1>Skills</h1>
 				</div>
 
-				<div style={{backgroundColor: '#fff', padding: '0 15px', boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)'}}>
+				<div style={styles.skillsMain}>
 					<TextInput {...actions} placeholder='Search...' />
-					<div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', textAlign: 'center'}}>
+					<div style={}>
 						{
 							skills.map((skill, i) => {
 								if (skill.show) {
-									return <div className='skill' style={{padding: '10px 10px', margin: '10px auto'}} key={i}>{skill.title}</div>
+									return <div className='skill' style={styles.skill} key={i}>{skill.title}</div>
 								}
 							})
 						}
