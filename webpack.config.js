@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -35,16 +36,17 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        loader: "style!css!stylus"
+        loader: "style-loader!css-loader!postcss-loader!stylus-loader"
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        loader: "style-loader!css-loader!postcss-loader"
       },
       {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=[path][name].[ext]'
       },
     ]
-  }
+  },
+  postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
 };
