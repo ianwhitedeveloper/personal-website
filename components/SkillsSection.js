@@ -12,7 +12,8 @@ export default class SkillsSection {
 			skillsMain: {
 				backgroundColor: '#fff', 
 				padding: '0 15px', 
-				boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)'
+				boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)',
+				minHeight: '200px'
 			},
 			skillsContainer: {
 				display: 'flex', 
@@ -21,10 +22,8 @@ export default class SkillsSection {
 				textAlign: 'center'
 			},
 			skill: {
-				display: 'flex', 
-				flexDirection: 'row', 
-				flexWrap: 'wrap', 
-				textAlign: 'center'
+				padding: '10px 10px', 
+				margin: '10px auto'
 			},
 			header: {
 				textAlign: 'center'
@@ -39,7 +38,7 @@ export default class SkillsSection {
 
 				<div style={styles.skillsMain}>
 					<TextInput {...actions} placeholder='Search...' />
-					<div style={}>
+					<div style={styles.skillsContainer}>
 						{
 							skills.map((skill, i) => {
 								if (skill.show) {

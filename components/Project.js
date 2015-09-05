@@ -35,11 +35,11 @@ export default class Project extends Component {
 				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
 				    <img src={project.imgSrc} />
 				  </CardMedia>
-				  <CardActions style={styles.cardActions>
+				  <CardActions style={styles.cardActions}>
 						<FlatButton primary={true}  onClick={() => likeProject(project.title)} label='Like!' />
 						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit!' />
 				  </CardActions>
-				  <CardText className='project_description' style={styles.cardText>
+				  <CardText className='project_description' style={styles.cardText}>
 				    {project.description}
 				  </CardText>
 				</Card>
