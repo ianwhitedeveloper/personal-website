@@ -7,6 +7,19 @@ const FontIcon = mui.FontIcon;
 
 const ThemeManager = new mui.Styles.ThemeManager();
 
+const styles = {
+  fontIcon: {
+    zIndex: '2', 
+    cursor: 'pointer', 
+    position: 'absolute', 
+    top: '50%', 
+    right: '0'
+  },
+  searchInput: {
+    position: 'relative'
+  }
+}
+
 export default class TextInput extends Component {
 
   constructor(props, context) {
@@ -31,8 +44,8 @@ export default class TextInput extends Component {
     const { filterSkills, placeholder } = this.props;
 
     return (
-      <div id='search_input' style={{position: 'relative'}}>
-        <FontIcon onClick={::this.clearInput} style={{zIndex: '2', cursor: 'pointer', position: 'absolute', top: '50%', right: '0'}} className="material-icons" hoverColor='#ddd'>close</FontIcon>
+      <div id='search_input' style={styles.searchInput}>
+        <FontIcon onClick={::this.clearInput} style={styles.fontIcon} className="material-icons" hoverColor='#ddd'>close</FontIcon>
         <TextField
           style={{width: '100%'}}
           floatingLabelText={placeholder}

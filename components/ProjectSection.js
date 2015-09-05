@@ -5,12 +5,22 @@ export default class ProjectSection extends Component {
 	render() {
 		const { projects, actions } = this.props;
 
+		const styles = {
+			projects: {
+				display: 'flex', 
+				flexWrap: 'wrap'
+			},
+			header: {
+				textAlign: 'center'
+			}
+		}
+
 		return (
 			<section>
-				<div style={{textAlign: 'center'}}>
+				<div style={styles.header}>
 					<h1>Projects</h1>
 				</div>
-				<div style={{display: 'flex', flexWrap: 'wrap'}}>
+				<div style={styles.projects}>
 					{projects.map((project, i) => {
 						return <Project key={i} project={project} {...actions} />
 					})}
