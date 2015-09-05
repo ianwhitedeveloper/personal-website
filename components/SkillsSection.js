@@ -12,8 +12,7 @@ export default class SkillsSection {
 			skillsMain: {
 				backgroundColor: '#fff', 
 				padding: '0 15px', 
-				boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)',
-				minHeight: '200px'
+				boxShadow: '0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22)'
 			},
 			skillsContainer: {
 				display: 'flex', 
