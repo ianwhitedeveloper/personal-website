@@ -9,22 +9,37 @@ const CardTitle = mui.CardTitle;
 const CardActions = mui.CardActions;
 const FlatButton = mui.FlatButton;
 
+const styles = {
+	project: {
+		display: 'flex', 
+		flexWrap: 'wrap'
+	},
+	cardActions: {
+		display: 'flex', 
+		flexDirection: 'row', 
+		justifyContent: 'space-between'
+	},
+	cardText: {
+		textAlign: 'center'
+	}
+}
+
 export default class Project extends Component {
 	render() {
 		const { likeProject, project } = this.props;
 
 		return (
-			<div style={{display: 'flex', flexWrap: 'wrap'}} className='col-xs-12 col-sm-12 col-md-6'>
+			<div style={styles.project} className='col-xs-12 col-sm-12 col-md-6'>
 
 				<Card>
 				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
 				    <img src={project.imgSrc} />
 				  </CardMedia>
-				  <CardActions style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+				  <CardActions style={styles.cardActions>
 						<FlatButton primary={true}  onClick={() => likeProject(project.title)} label='Like!' />
 						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit!' />
 				  </CardActions>
-				  <CardText className='project_description' style={{textAlign: 'center', }}>
+				  <CardText className='project_description' style={styles.cardText>
 				    {project.description}
 				  </CardText>
 				</Card>
