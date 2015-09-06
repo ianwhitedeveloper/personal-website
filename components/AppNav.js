@@ -13,7 +13,10 @@ const styles = {
 	}
 }
 const menuItems = [
-  { href: '/#skills', text: 'skills' },
+  { href: '/#projects', text: 'Projects' },
+  { href: '/#skills', text: 'Skills Section' },
+  { href: '/#education', text: 'Education Section' },
+  { href: '/#contact', text: 'About/Contact Section' },
 
   
 ];
