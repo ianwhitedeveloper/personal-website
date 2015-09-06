@@ -1,37 +1,21 @@
 import React, {Component} from 'react';
 import mui from 'material-ui';
+import LeftNav from './custom-ui-components/left-nav';
+import MenuItem from './custom-ui-components/left-nav';
 import Sticky from 'react-sticky';
 
 const AppBar = mui.AppBar;
-const LeftNav = mui.LeftNav;
-const MenuItem = mui.MenuItem;
+// const MenuItem = mui.LeftNav;
+// const MenuItem = mui.MenuItem;
 const styles = {
 	stickyHeader: {
 		backgroundColor: 'rgba(2, 119, 189, 0.8)'
 	}
 }
 const menuItems = [
-  { type: MenuItem.Types.SUBHEADER, text: 'Resources' },
-  {
-     type: MenuItem.Types.LINK,
-     payload: '/#projects',
-     text: 'Projects'
-  },
-  {
-     type: MenuItem.Types.LINK,
-     payload: '/#skills',
-     text: 'Skills'
-  },
-  {
-     type: MenuItem.Types.LINK,
-     payload: '/#education',
-     text: 'Education'
-  },
-  {
-     type: MenuItem.Types.LINK,
-     payload: '/#contact',
-     text: 'Contact'
-  },
+  { href: '/#skills', text: 'skills' },
+
+  
 ];
 
 export default class AppNav extends Component {
