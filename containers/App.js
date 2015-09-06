@@ -75,6 +75,10 @@ export default class App extends Component {
 					</div>
 				</div>
 
+				<footer style={{textAlign: 'center'}}>
+					<p><small>Made with React.js, Redux, and Material UI</small></p>
+				</footer>
+
 				<pre>
 				  redux state = { JSON.stringify(reduxState, null, 2) }
 				</pre>
