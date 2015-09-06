@@ -1,8 +1,8 @@
 import React from 'react';
 import mui from 'material-ui';
 
-const FlatButton = mui.FlatButton;
-const FontIcon = mui.FontIcon;
+const { FlatButton, FontIcon, Paper } = mui;
+
 
 const resumeLink = 'https://docs.google.com/document/d/1RO41Xdr95pISO0-N9HFoWVIshQYLj_xS1w-uN7IpR5g/edit?usp=sharing';
 const githubLink = 'https://github.com/Iawhite76';
@@ -47,13 +47,13 @@ export default class ContactSection {
 					<h1>Contact/About Me</h1>
 				</div>
 
-				<div className='col-xs-12 col-sm-12 col-md-9'>
+				<Paper className='col-xs-12 col-sm-12 col-md-9'>
 					<p>
 						Some time in 2013 a good friend of mine introduced me to web development and I was immediately hooked.
 					</p>
 					<p>In early 2014 I quit my job and attended <span>MakerSquare</span>, a coding bootcamp that helped launch me into a new career as a full stack web developer.</p>
 					<p>I really enjoy solving problem solving and creating sites my clients can love! Also, I love to be part of a collaborative team and look forward to a lifetime of learning and opportunites.</p>
-				</div>
+				</Paper>
 
 				<div className='col-xs-12 col-sm-12 col-md-3'>
 				  <FlatButton style={styles.button} linkButton={true} target='_self' href={emailAddy} label='Email'>
