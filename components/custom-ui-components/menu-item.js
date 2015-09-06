@@ -132,6 +132,12 @@ var MenuItem = React.createClass({
 
     if (this.props.iconClassName) icon = React.createElement(FontIcon, { style: this.mergeAndPrefix(styles.icon, this.props.iconStyle, this.props.selected && styles.rootWhenSelected), className: this.props.iconClassName });
     if (this.props.iconRightClassName) iconRight = React.createElement(FontIcon, { style: this.mergeAndPrefix(styles.iconRight, this.props.iconRightStyle), className: this.props.iconRightClassName });
+
+    /*My personal customization: Add an a tag component with an href set to custom 
+    href prop in menu item object so that I can piggyback on default mui menu item
+    functionality of closing the left nav on click because default mui menu-item-link
+    does NOT provide this funtionality.*/
+
     if (this.props.href) link = React.createElement(
       'a',
       { 
@@ -187,6 +193,7 @@ var MenuItem = React.createClass({
         onTouchTap: this._handleTouchTap,
         onMouseEnter: this._handleMouseEnter,
         onMouseLeave: this._handleMouseLeave,
+        /*NOTE: I added the {position: 'relative'} style object so my link hack could be 100% width and height of menu item div*/
         style: this.mergeAndPrefix(styles.root, {position: 'relative'}, this.props.selected && styles.rootWhenSelected, this.props.active && !this.props.disabled && styles.rootWhenHovered, this.props.style, this.props.disabled && styles.rootWhenDisabled) },
       icon,
       this.props.children,

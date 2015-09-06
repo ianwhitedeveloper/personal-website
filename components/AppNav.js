@@ -29,7 +29,7 @@ export default class AppNav extends Component {
 				<Sticky>
 					<AppBar onLeftIconButtonTouchTap={::this.handleClick} style={styles.stickyHeader} />
 				</Sticky>
-
+			{/*Had to hack the damn material-ui files to add a tag and href to regular menu item because material ui menu item will NOT close menu on cick. See custom-ui-components for components I had to customize :(*/}
 				<LeftNav ref="leftNav" docked={false} menuItems={menuItems} />
 			</div>
 		);
