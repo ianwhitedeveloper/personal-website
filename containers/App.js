@@ -8,6 +8,7 @@ import EducationSection from '../components/EducationSection';
 import Header from '../components/Header';
 import ContactSection from '../components/ContactSection';
 import AppNav from '../components/AppNav';
+import Experience from '../components/Experience';
 
 import mui from 'material-ui';
 let ThemeManager = new mui.Styles.ThemeManager();
@@ -67,6 +68,10 @@ export default class App extends Component {
 
 				<div id='education' className='row'>
 					<EducationSection />
+				</div>
+
+				<div id='Experience' className='row'>
+					<Experience />
 				</div>
 
 				<div id='contact' className='row'>
