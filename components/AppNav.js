@@ -16,6 +16,7 @@ const menuItems = [
   { href: '/#projects', text: 'Projects' },
   { href: '/#skills', text: 'Skills Section' },
   { href: '/#education', text: 'Education Section' },
+  { href: '/#experience', text: 'Experience Section' },
   { href: '/#contact', text: 'About/Contact Section' },
 
   

@@ -70,7 +70,7 @@ export default class App extends Component {
 					<EducationSection />
 				</div>
 
-				<div id='Experience' className='row'>
+				<div id='experience' className='row'>
 					<Experience />
 				</div>
 

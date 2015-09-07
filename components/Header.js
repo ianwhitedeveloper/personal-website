@@ -22,7 +22,7 @@ const styles = {
 		flexFlow: 'row no-wrap',
 		justifyContent: 'space-between',
 		padding: '15px 0',
-		marginTop: '64px'
+		marginTop: '50px'
 	},
 	figCaption: {
 		textAlign: 'right',

@@ -47,31 +47,34 @@ export default class ContactSection {
 					<h1>Contact/About Me</h1>
 				</div>
 
-				<Paper className='col-xs-12 col-sm-12 col-md-9'>
-					<p>
-						Some time in 2013 a good friend of mine introduced me to web development and I was immediately hooked.
-					</p>
-					<p>In early 2014 I quit my job and attended <span>MakerSquare</span>, a coding bootcamp that helped launch me into a new career as a full stack web developer.</p>
-					<p>I really enjoy solving problem solving and creating sites my clients can love! Also, I love to be part of a collaborative team and look forward to a lifetime of learning and opportunites.</p>
+				<Paper className='row'>
+					<div className='col-xs-12 col-sm-12 col-md-9'>
+						<p>
+							In 2013 a good friend of mine introduced me to web development and I was immediately hooked.
+						</p>
+						<p>In early 2014 I quit my job and attended <span>MakerSquare</span>, a coding bootcamp that helped launch me into a new career as a full stack web developer.</p>
+						<p>Bleeding edge web techonologies and frameworks intrigue me and I love experimenting with them in hopes of finding great new tools for my team.</p>
+						<p>I'm interested in joining a collaborative, forward looking team where I can help solve problems and continue to grow as a developer.</p>
+					</div>
+					<div className='col-xs-12 col-sm-12 col-md-3'>
+					  <FlatButton style={styles.button} linkButton={true} target='_self' href={emailAddy} label='Email'>
+					    <FontIcon style={styles.buttonIcon} className='material-icons' hoverColor='#ddd'>email</FontIcon>
+					  </FlatButton>
+
+					  <FlatButton style={styles.button} linkButton={true} target='_blank' href={resumeLink} label='Resume'>
+					    <FontIcon style={styles.buttonIcon} className='material-icons' hoverColor='#ddd'>description</FontIcon>
+					  </FlatButton>
+
+					  <FlatButton style={styles.button} linkButton={true} target='_blank' href={githubLink} label='Github'>
+					    <FontIcon style={styles.buttonIconFA} className='fa fa-github' hoverColor='#ddd'></FontIcon>
+					  </FlatButton>
+
+					  <FlatButton style={styles.button} linkButton={true} target='_blank' href={linkedin} label='Linkedin'>
+					    <FontIcon style={styles.buttonIconFA} className='fa fa-linkedin-square' hoverColor='#ddd'></FontIcon>
+					  </FlatButton>
+					</div>
 				</Paper>
 
-				<div className='col-xs-12 col-sm-12 col-md-3'>
-				  <FlatButton style={styles.button} linkButton={true} target='_self' href={emailAddy} label='Email'>
-				    <FontIcon style={styles.buttonIcon} className='material-icons' hoverColor='#ddd'>email</FontIcon>
-				  </FlatButton>
-
-				  <FlatButton style={styles.button} linkButton={true} target='_blank' href={resumeLink} label='Resume'>
-				    <FontIcon style={styles.buttonIcon} className='material-icons' hoverColor='#ddd'>description</FontIcon>
-				  </FlatButton>
-
-				  <FlatButton style={styles.button} linkButton={true} target='_blank' href={githubLink} label='Github'>
-				    <FontIcon style={styles.buttonIconFA} className='fa fa-github' hoverColor='#ddd'></FontIcon>
-				  </FlatButton>
-
-				  <FlatButton style={styles.button} linkButton={true} target='_blank' href={linkedin} label='Linkedin'>
-				    <FontIcon style={styles.buttonIconFA} className='fa fa-linkedin-square' hoverColor='#ddd'></FontIcon>
-				  </FlatButton>
-				</div>
 			</section>
 		);
 	}
