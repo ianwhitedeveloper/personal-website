@@ -14,10 +14,10 @@ const styles = {
 }
 const menuItems = [
   { href: '/#projects', text: 'Projects' },
-  { href: '/#skills', text: 'Skills Section' },
-  { href: '/#education', text: 'Education Section' },
-  { href: '/#experience', text: 'Experience Section' },
-  { href: '/#contact', text: 'About/Contact Section' },
+  { href: '/#skills', text: 'Skills' },
+  { href: '/#education', text: 'Education' },
+  { href: '/#experience', text: 'Experience' },
+  { href: '/#contact', text: 'About/Contact' },
 
   
 ];
