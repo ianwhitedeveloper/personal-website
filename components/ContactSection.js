@@ -50,9 +50,9 @@ export default class ContactSection {
 				<Paper className='row'>
 					<div className='col-xs-12 col-sm-12 col-md-9'>
 						<p>
-							In 2013 a good friend of mine introduced me to web development and I was immediately hooked.
+							In 2013 a good friend of mine introduced me to web development and I was immediately hooked due to the creative nature of programming.
 						</p>
-						<p>In early 2014 I quit my job and attended <span>MakerSquare</span>, a coding bootcamp that helped launch me into a new career as a full stack web developer.</p>
+						<p>In early 2014 I was accepted into <span>MakerSquare</span>, a highly selective coding bootcamp that helped launch me into a new career as a full stack web developer by teaching me programming basics.</p>
 						<p>Bleeding edge web techonologies and frameworks intrigue me and I love experimenting with them in hopes of finding great new tools for my team.</p>
 						<p>I'm interested in joining a collaborative, forward looking team where I can help solve problems and continue to grow as a developer.</p>
 					</div>

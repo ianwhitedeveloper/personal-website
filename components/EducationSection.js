@@ -17,7 +17,7 @@ export default class EducationSection {
 				<div className='col-sm-6'>
 					<div className='tile ut'>
 						<h1>UT Austin</h1>
-						<p>Completed degree in Psychology while working full-time at Glazer’s Distributors where I gained experience in merchandising and wine sales. <span style={{fontWeight: 'bold'}}>- December 2009</span></p>
+						<p>I completed a degree in Psychology while working full-time at Glazer’s Distributors.<span style={{fontWeight: 'bold'}}>- December 2009</span></p>
 					</div>
 				</div>
 			</section>
