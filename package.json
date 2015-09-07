@@ -9,21 +9,16 @@
   },
   "scripts": {
     "start": "node server",
+    "prod": "webpack -p --config webpack.dist.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "isomorphic-fetch": "^2.1.1",
-    "lodash": "^3.10.1",
     "material-ui": "^0.11.0",
-    "normalizr": "^1.0.0",
     "react": "^0.13.3",
     "react-redux": "^1.0.1",
-    "react-router": "^1.0.0-beta3",
-    "redux": "^1.0.1",
-    "redux-logger": "0.0.1",
-    "redux-thunk": "^0.1.0"
+    "redux": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.0",
