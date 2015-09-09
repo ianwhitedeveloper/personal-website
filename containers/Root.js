@@ -23,6 +23,20 @@ let temporaryInitialState = {
       url: 'https://wishesdelivered.ups.com/#all-wishes',
       imgSrc: '../assets/images/peak.jpg',
       likes: 0
+    },
+    {
+      title: 'UPS mDot',
+      description: 'Principal front end developer/maintainer of UPS mdot site - a website utilized by many thousands of users each month. Responsible for turning creative specs numbering hundreds of pages into clean and semantic front end code to be handed off to UPS back end engineers. My work has been routinely delivered on or before project deadlines.',
+      url: 'https://m.ups.com/mDot/',
+      imgSrc: '../assets/images/mdot.png',
+      likes: 0
+    },
+    {
+      title: 'UPS Healthcare',
+      description: 'Responsible for many of the Javascript and CSS animations as well as other front end functionality seen throughout the pages on this site.',
+      url: 'https://healthcare.ups.com/finding-efficiency-through-healthcare-supply-chain-management/',
+      imgSrc: '../assets/images/healthcare.jpg',
+      likes: 0
     }
   ],
   skills: [
@@ -75,6 +89,4 @@ export default class Root extends Component {
   }
 }
 
-Root.propTypes = {
-  history: PropTypes.object.isRequired,
-};
+
