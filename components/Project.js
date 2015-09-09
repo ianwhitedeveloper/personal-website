@@ -32,7 +32,10 @@ export default class Project extends Component {
 			<div style={styles.project} className='col-xs-12 col-sm-12 col-md-6'>
 
 				<Card style={{zIndex: '0'}}>
-				  <CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
+					{
+					  //<CardMedia overlay={<CardTitle title={project.title} subtitle={`Likes: ${project.likes}`}/>}>
+					}
+				  <CardMedia overlay={<CardTitle title={project.title} />}>
 				    <img src={project.imgSrc} />
 				  </CardMedia>
 				  <CardActions style={styles.cardActions}>
