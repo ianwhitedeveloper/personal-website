@@ -4,7 +4,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
 module.exports = {
-  devtool: 'eval',
   entry: [
     './index'
   ],
@@ -13,17 +12,11 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: './'
   },
-  stats: {
-    colors: true,
-    reasons: true
-  },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules']
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [

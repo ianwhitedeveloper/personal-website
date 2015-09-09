@@ -1,15 +1,15 @@
 {
-  "name": "dev-talk",
-  "version": "0.0.0",
-  "description": "",
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Ian White personal website",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattybow/redux-starter"
+    "url": "https://github.com/Iawhite76/personal-website"
   },
   "scripts": {
     "start": "node server",
-    "prod": "webpack -p --config webpack.dist.config.js",
+    "prod": "NODE_ENV=production webpack -p --config webpack.dist.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
