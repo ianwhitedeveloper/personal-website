@@ -2,12 +2,14 @@ import React from 'react';
 import mui from 'material-ui';
 import Sticky from 'react-sticky';
 
+const ian = require('../assets/images/ian-cig.jpg')
+
 const AppBar = mui.AppBar;
 
 const Paper = mui.Paper;
 const styles = {
 	logoStyles: {
-		background: 'url("../assets/images/ian-cig.jpg") no-repeat center center',
+		background: `url(${ian}) no-repeat center center`,
 		height: '25vw',
 		width: '25vw',
 		maxWidth: '200px',
