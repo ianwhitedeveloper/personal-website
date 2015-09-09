@@ -17,7 +17,7 @@ const styles = {
 	cardActions: {
 		display: 'flex', 
 		flexDirection: 'row', 
-		justifyContent: 'space-between'
+		justifyContent: 'center'
 	},
 	cardText: {
 		textAlign: 'center'
@@ -36,7 +36,9 @@ export default class Project extends Component {
 				    <img src={project.imgSrc} />
 				  </CardMedia>
 				  <CardActions style={styles.cardActions}>
-						<FlatButton primary={true}  onClick={() => likeProject(project.title)} label='Like!' />
+						{
+							//<FlatButton primary={true}  onClick={() => likeProject(project.title)} label='Like!' />
+						}
 						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit!' />
 				  </CardActions>
 				  <CardText className='project_description' style={styles.cardText}>
