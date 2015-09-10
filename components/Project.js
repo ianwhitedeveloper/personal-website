@@ -2,12 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import dispatch from 'redux';
 import mui from 'material-ui';
 
-const Card = mui.Card;
-const CardMedia = mui.CardMedia;
-const CardText = mui.CardText;
-const CardTitle = mui.CardTitle;
-const CardActions = mui.CardActions;
-const FlatButton = mui.FlatButton;
+const {Card, CardMedia, CardText, CardTitle, CardActions, FlatButton} = mui;
 
 const styles = {
 	project: {
@@ -24,7 +19,7 @@ const styles = {
 	}
 }
 
-export default class Project extends Component {
+export default class Project {
 	render() {
 		const { likeProject, project } = this.props;
 
