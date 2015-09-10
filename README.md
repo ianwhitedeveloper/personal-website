@@ -1,11 +1,11 @@
-# redux-starter
-This is a development only starter kit meant to help get a project started with [Redux](https://github.com/gaearon/redux)
+# My personal website
+This is the repo for my personal website built with React.js, Redux, Google Material UI, Webpack, React Sticky (header). 
 
 clone repo:
 
 ```
-git clone https://github.com/mattybow/redux-starter
-cd redux-starter
+git clone https://github.com/Iawhite76/personal-website
+cd personal-website
 ```
 
 run:
