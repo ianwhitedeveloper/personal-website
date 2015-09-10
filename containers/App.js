@@ -81,7 +81,7 @@ export default class App extends Component {
 				</div>
 
 				<footer style={{textAlign: 'center'}}>
-					<p><small>Made with React.js, Redux, and Material UI</small></p>
+					<p><small>Made with React.js, Redux, and Material UI. This site only supports recent versions of Chrome, Firefox, and IE11.</small></p>
 				</footer>
 			</main>
 		);
