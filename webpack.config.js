@@ -46,6 +46,15 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=[path][name].[ext]'
       },
+      { 
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: "url-loader" 
+      },
+
+      { 
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: "url-loader" 
+      },
     ]
   },
   postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
