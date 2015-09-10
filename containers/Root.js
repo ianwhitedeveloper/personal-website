@@ -55,6 +55,7 @@ let temporaryInitialState = {
     {title: 'Express.js', show: true},
     {title: 'Node.js ', show: true},
     {title: 'NPM ', show: true},
+    {title: 'Flexbox ', show: true},
     {title: 'Socket.io', show: true},
     {title: 'Grunt', show: true},
     {title: 'Gulp', show: true},
