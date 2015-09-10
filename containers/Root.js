@@ -19,21 +19,21 @@ let temporaryInitialState = {
     },
     {
       title: 'UPS Peak',
-      description: 'Developed of a majority of the front end styling based off Photoshop comps delivered by creative department. Fully responsive and browser compliant to IE8. Volunteered to join the team responsible for this site to help finish project during busy holiday season. I was able to quickly get up to speed and contribute helping to complete the project by the deadline.',
+      description: 'Developed of a majority of the front end styling based off Photoshop comps delivered by creative department leveraging jQuery, Bootstrap, Grunt, and Bower. Fully responsive and browser compliant to IE8. Volunteered to join the team responsible for this site to help finish project during busy holiday season. I was able to quickly get up to speed and contribute helping to complete the project by the deadline.',
       url: 'https://wishesdelivered.ups.com/#all-wishes',
       imgSrc: '../assets/images/peak.jpg',
       likes: 0
     },
     {
       title: 'UPS mDot',
-      description: 'Principal front end developer/maintainer of UPS mdot site - a website utilized by many thousands of users each month. Developed and maintained clean and semantic front end code based on creative specs numbering hundreds of pages to be handed off to UPS back end engineers. Work has been routinely delivered on or before project deadlines.',
+      description: 'Principal front end developer/maintainer of UPS mdot site - a website utilized by many thousands of users each month. Parse creative specs numbering hundreds of pages to develop and maintain semantic HTML markup and interactivity leveraging Grunt, Bower, jQuery, and Bootstrap to be handed off to UPS back end engineers. Work has been routinely delivered on or before project deadlines.',
       url: 'https://m.ups.com/mDot/',
       imgSrc: '../assets/images/mdot.png',
       likes: 0
     },
     {
       title: 'UPS Healthcare',
-      description: 'Another project where I was able to jump in and assist the team so the project could be finished by a tight deadline. Fully responsive and browser compliant to IE8. Developed many of the Javascript and CSS animations as well as other front end functionality seen throughout the pages on this site.',
+      description: 'Another project where I was able to jump in and assist the team so the project could be finished by a tight deadline. Fully responsive and browser compliant to IE8. Developed many of the Javascript and CSS animations as well as other front end functionality seen throughout the pages on this site by utilizing jQuery, Bootstrap and TweenMax.',
       url: 'https://healthcare.ups.com/finding-efficiency-through-healthcare-supply-chain-management/',
       imgSrc: '../assets/images/healthcare.jpg',
       likes: 0
@@ -54,6 +54,7 @@ let temporaryInitialState = {
     {title: 'React.js', show: true},
     {title: 'Express.js', show: true},
     {title: 'Node.js ', show: true},
+    {title: 'NPM ', show: true},
     {title: 'Socket.io', show: true},
     {title: 'Grunt', show: true},
     {title: 'Gulp', show: true},
