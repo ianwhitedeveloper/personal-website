@@ -18,10 +18,10 @@ let temporaryInitialState = {
       likes: 0
     },
     {
-      title: 'UPS Peak',
-      description: 'Developed of a majority of the front end styling based off Photoshop comps delivered by creative department leveraging jQuery, Bootstrap, Grunt, and Bower. Fully responsive and browser compliant to IE8. Volunteered to join the team responsible for this site to help finish project during busy holiday season. I was able to quickly get up to speed and contribute helping to complete the project by the deadline.',
-      url: 'https://wishesdelivered.ups.com/#all-wishes',
-      imgSrc: '../assets/images/peak.jpg',
+      title: 'UPS TED Landing Page',
+      description: 'Principal developer for this UPS TED campaign landing page. Successfully implemented a challenging, unique page design that is responsive and cross browser tested, including IE8, desktop and mobile browsers. Built with PHP, Modernizr, Bootstrap, jQuery and YouTube asynchronous iframe api',
+      url: 'https://solvers.ups.com/think-solve-do',
+      imgSrc: '../assets/images/tedlp.jpg',
       likes: 0
     },
     {
@@ -44,8 +44,8 @@ let temporaryInitialState = {
     {title: 'AWS', show: true},
     {title: 'WordPress 4+', show: true},
     {title: 'WordPress VIP', show: true},
-    {title: 'Rails 4', show: true}, 
-    {title: 'Ruby 2', show: true}, 
+    {title: 'Rails 4', show: true},
+    {title: 'Ruby 2', show: true},
     {title: 'Javascript ES5 & 6', show: true},
     {title: 'Phonegap/Cordova', show: true},
     {title: 'jQuery', show: true},
