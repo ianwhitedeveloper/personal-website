@@ -12,7 +12,7 @@ let temporaryInitialState = {
   projects: [
     {
       title: 'UPS Houston',
-      description: 'Sole developer for this project. Worked collaboratively  with art, account and creative departments to bring this campaign to life. Utilized Grunt, Vagrant, Yeoman, Bootstrap, Javascript and jQuery on the front end. Integrated backend database and authentication technologies including Silverpop and Linkedin REST APIs. Fully responsive and browser compliant to IE8. Completed project on time and to full client satisfaction. Upon completion of this project, I created a Yeoman generator for the UPS development team so that future projects of this scope could be more quickly and efficiently developed. Code can be found here: https://github.com/Iawhite76/generator-webapp-vagrant',
+      description: 'Sole developer for this project. Worked collaboratively  with art, account and creative departments to bring this campaign to life. Utilized Grunt, Vagrant, Yeoman, Bootstrap, Javascript and jQuery on the front end. Integrated backend database and authentication technologies including Silverpop and Linkedin REST APIs. Fully responsive and browser compliant to IE8. Completed project on time and to full client satisfaction. Upon completion of this project, I created a Yeoman generator for the UPS development team so that future projects of this scope could be more quickly and efficiently developed. Code can be found here: https://github.com/ianwhitedeveloper/generator-webapp-vagrant',
       url: 'https://houston.ups.com',
       imgSrc: '../assets/images/houston.jpg',
       likes: 0

@@ -5,7 +5,7 @@ const { FlatButton, FontIcon, Paper } = mui;
 
 
 const resumeLink = 'https://app.box.com/s/v05vtbwyaeyfgohtf8hnbd3fvzpu5w04';
-const githubLink = 'https://github.com/Iawhite76';
+const githubLink = 'https://github.com/ianwhitedeveloper';
 const emailAddy = 'mailto:ian.white.developer@gmail.com';
 const linkedin = 'https://www.linkedin.com/in/ianwhitedeveloper';
 

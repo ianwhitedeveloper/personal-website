@@ -81,7 +81,7 @@ export default class App extends Component {
 				</div>
 
 				<footer style={{textAlign: 'center'}}>
-					<p><small><a href='https://github.com/Iawhite76/personal-website' alt='My Website Github Repo' target='_blank'>Made with React.js, Redux, and Material UI.</a> This site only supports recent versions of Chrome, Firefox, and IE11.</small></p>
+					<p><small><a href='https://github.com/ianwhitedeveloper/personal-website' alt='My Website Github Repo' target='_blank'>Made with React.js, Redux, and Material UI.</a> This site only supports recent versions of Chrome, Firefox, and IE11.</small></p>
 				</footer>
 			</main>
 		);

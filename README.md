@@ -4,7 +4,7 @@ This is the repo for my personal website built with React.js, Redux, Google Mate
 clone repo:
 
 ```
-git clone https://github.com/Iawhite76/personal-website
+git clone https://github.com/ianwhitedeveloper/personal-website
 cd personal-website
 ```
 
