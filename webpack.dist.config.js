@@ -2,6 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
+var CompressionPlugin = require("compression-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 
 module.exports = {
   entry: [
@@ -13,7 +16,23 @@ module.exports = {
     publicPath: './'
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+    new CompressionPlugin({
+      asset: "[path].gzip[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8
+    }),
+    new CopyWebpackPlugin([
+        { from: './index.html' },
+        { from: './favicon.ico' }
+    ], {
+        // By default, we only copy modified files during
+        // a watch or webpack-dev-server build. Setting this
+        // to `true` copies all files.
+        copyUnmodified: false
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
