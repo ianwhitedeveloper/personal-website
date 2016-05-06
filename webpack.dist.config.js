@@ -12,7 +12,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '/assets/bundle.js',
     publicPath: './'
   },
   plugins: [
@@ -26,7 +26,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
         { from: './index.html' },
-        { from: './favicon.ico' }
+        { from: './favicon.ico' },
+        { from: './assets', to: './assets' }
     ], {
         // By default, we only copy modified files during
         // a watch or webpack-dev-server build. Setting this
