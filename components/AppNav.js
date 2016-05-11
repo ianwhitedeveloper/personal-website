@@ -14,6 +14,7 @@ const styles = {
 }
 const menuItems = [
   { href: '/#projects', text: 'Projects' },
+  { href: '/#openSourceProjects', text: 'OSS Project Contributions' },
   { href: '/#skills', text: 'Skills' },
   { href: '/#education', text: 'Education' },
   { href: '/#experience', text: 'Experience' },

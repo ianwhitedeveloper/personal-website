@@ -39,6 +39,22 @@ let temporaryInitialState = {
       likes: 0
     }
   ],
+  openSourceProjects: [
+    {
+      title: 'The Odin Project',
+      description: 'Worked within the full stack of an existing Rails 4 codebase following an Agile workflow. Successfully implemented and exhaustively tested assigned project stories ranging from site-wide features to page specific content. Developed backend logic and frontend code. Worked extensively with Oauth. Experience with remote work, project management and pair programming via Google hangouts, Pivotal Tracker, Github and Nitrous.io',
+      url: 'https://github.com/TheOdinProject/theodinproject/commits?author=ianwhitedeveloper',
+      imgSrc: '../assets/images/odin.jpg',
+      likes: 0
+    },
+    {
+      title: 'Umbrella.js',
+      description: 'Lightweight and intuitive Javascript library. Worked collaboratively with library author to implement wrap library method. My Contributions are fully documented and tested using Mocha/Chai. I leveraged TDD (Test Driven Development). Asset and test management via Grunt.',
+      url: 'https://github.com/umbrellajs/umbrella/commits?author=ianwhitedeveloper',
+      imgSrc: '../assets/images/umbrella.jpg',
+      likes: 0
+    }
+  ],
   skills: [
     {title: 'Photoshop', show: true},
     {title: 'AWS', show: true},

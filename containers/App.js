@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actionCreators';
 import ProjectSection from '../components/ProjectSection';
+import OpenSourceProjectsSection from '../components/OpenSourceProjectsSection';
 import SkillsSection from '../components/SkillsSection';
 import EducationSection from '../components/EducationSection';
 import Header from '../components/Header';
@@ -40,7 +41,7 @@ export default class App extends Component {
 	}
 	
 	render() {
-		const { reduxState, projects, skills, dispatch } = this.props;
+		const { reduxState, projects, skills, dispatch, openSourceProjects } = this.props;
 
 		/*Make all action creators available to components via props 
 		bind to redux dipatch function http://rackt.github.io/redux/docs/api/bindActionCreators.html*/
@@ -58,6 +59,10 @@ export default class App extends Component {
 
 				<div id='projects' className='projects row'>
 					<ProjectSection projects={projects} actions={actions} />
+				</div>
+
+				<div id='openSourceProjects' className='openSourceProjects row'>
+					<OpenSourceProjectsSection openSourceProjects={openSourceProjects} actions={actions} />
 				</div>
 
 				<div id='skills' className='row'>
@@ -119,5 +124,6 @@ App.propTypes = {
 export default connect(state => ({
   reduxState: state,
   projects: state.projects,
+  openSourceProjects: state.openSourceProjects,
   skills: state.skills
 }))(App);
