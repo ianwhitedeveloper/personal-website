@@ -4,7 +4,7 @@ import mui from 'material-ui';
 const { FlatButton, FontIcon, Paper } = mui;
 
 
-const resumeLink = 'https://app.box.com/s/v05vtbwyaeyfgohtf8hnbd3fvzpu5w04';
+const resumeLink = 'https://docs.google.com/document/d/1RO41Xdr95pISO0-N9HFoWVIshQYLj_xS1w-uN7IpR5g/edit?usp=sharing';
 const githubLink = 'https://github.com/ianwhitedeveloper';
 const emailAddy = 'mailto:ian.white.developer@gmail.com';
 const linkedin = 'https://www.linkedin.com/in/ianwhitedeveloper';
