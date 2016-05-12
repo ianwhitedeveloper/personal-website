@@ -12,7 +12,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '/assets/bundle.js',
+    filename: '/assets/bundle.[hash].js',
     publicPath: './'
   },
   plugins: [
