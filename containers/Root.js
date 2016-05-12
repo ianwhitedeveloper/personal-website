@@ -18,10 +18,11 @@ let temporaryInitialState = {
       likes: 0
     },
     {
-      title: 'UPS TED Landing Page',
-      description: 'Principal developer for this UPS TED campaign landing page. Successfully implemented a challenging, unique page design that is responsive and cross browser tested, including IE8, desktop and mobile browsers. Built with PHP, Modernizr, Bootstrap, jQuery and YouTube asynchronous iframe api',
-      url: 'https://solvers.ups.com/think-solve-do',
-      imgSrc: '../assets/images/tedlp.jpg',
+      title: 'UPS New Customer Welcome LP-US',
+      description: 'Responsible for implementing redesign of UPS New Customer Welcome US landing page. WordPress, Bootstrap, Vagrant, Apache, Modernizr.'
+,
+      url: 'https://welcome.ups.com/#article=home',
+      imgSrc: '../assets/images/ups-welcome.jpg',
       likes: 0
     },
     {
