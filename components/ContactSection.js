@@ -8,6 +8,7 @@ const resumeLink = 'https://docs.google.com/document/d/1RO41Xdr95pISO0-N9HFoWVIs
 const githubLink = 'https://github.com/ianwhitedeveloper';
 const emailAddy = 'mailto:ian.white.developer@gmail.com';
 const linkedin = 'https://www.linkedin.com/in/ianwhitedeveloper';
+const codewars = 'http://www.codewars.com/users/ianwhitedeveloper';
 
 const styles = {
 	buttonIcon: {
@@ -71,6 +72,10 @@ export default class ContactSection {
 
 					  <FlatButton style={styles.button} linkButton={true} target='_blank' href={linkedin} label='Linkedin'>
 					    <FontIcon style={styles.buttonIconFA} className='fa fa-linkedin-square' hoverColor='#ddd'></FontIcon>
+					  </FlatButton>
+
+					  <FlatButton style={styles.button} linkButton={true} target='_blank' href={codewars} label='Codewars'>
+					    <FontIcon style={styles.buttonIconFA} className='fa fa-code' hoverColor='#ddd'></FontIcon>
 					  </FlatButton>
 					</div>
 				</Paper>
