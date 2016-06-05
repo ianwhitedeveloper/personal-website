@@ -51,7 +51,7 @@ let temporaryInitialState = {
     {
       title: 'Umbrella.js',
       description: 'Lightweight and intuitive Javascript library. Worked collaboratively with library author to implement wrap library method. My Contributions are fully documented and tested using Mocha/Chai. I leveraged TDD (Test Driven Development). Asset and test management via Grunt.',
-      url: 'https://github.com/umbrellajs/umbrella/commits?author=ianwhitedeveloper',
+      url: 'https://github.com/umbrellajs/umbrella/graphs/contributors',
       imgSrc: '../assets/images/umbrella.jpg',
       likes: 0
     }
@@ -65,6 +65,7 @@ let temporaryInitialState = {
     {title: 'Ruby 2', show: true},
     {title: 'Javascript ES5 & 6', show: true},
     {title: 'Phonegap/Cordova', show: true},
+    {title: 'Umbrella.js', show: true},
     {title: 'jQuery', show: true},
     {title: 'Underscore.js', show: true},
     {title: 'Angular.js', show: true},
