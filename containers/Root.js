@@ -50,7 +50,7 @@ let temporaryInitialState = {
     },
     {
       title: 'Umbrella.js',
-      description: 'Lightweight and intuitive Javascript library. Worked collaboratively with library author to implement wrap library method. My Contributions are fully documented and tested using Mocha/Chai. I leveraged TDD (Test Driven Development). Asset and test management via Grunt.',
+      description: 'Worked collaboratively with library author to implement wrap and clone methods as well as fix append method. My Contributions are fully documented and tested using Mocha/Chai. I leveraged TDD (Test Driven Development). Asset and test management via Grunt.',
       url: 'https://github.com/umbrellajs/umbrella/graphs/contributors',
       imgSrc: '../assets/images/umbrella.jpg',
       likes: 0
