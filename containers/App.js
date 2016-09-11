@@ -34,16 +34,16 @@ let ThemeManager = new mui.Styles.ThemeManager();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default class App extends Component {
-	getChildContext() { 
+	getChildContext() {
 	  return {
 	    muiTheme: ThemeManager.getCurrentTheme()
 	  };
 	}
-	
+
 	render() {
 		const { reduxState, projects, skills, dispatch, openSourceProjects } = this.props;
 
-		/*Make all action creators available to components via props 
+		/*Make all action creators available to components via props
 		bind to redux dipatch function http://rackt.github.io/redux/docs/api/bindActionCreators.html*/
 		const actions = bindActionCreators(actionCreators, dispatch);
 
@@ -86,7 +86,7 @@ export default class App extends Component {
 				</div>
 
 				<footer style={{textAlign: 'center'}}>
-					<p><small><a href='https://github.com/ianwhitedeveloper/personal-website' alt='My Website Github Repo' target='_blank'>Made with React.js, Redux, and Material UI.</a> This site only supports recent versions of Chrome, Firefox, and IE11. Yes, I'm aware this is a super contrived example created soley to prove that I've worked with React. :)</small></p>
+					<p><small><a href='https://github.com/ianwhitedeveloper/personal-website' alt='My Website Github Repo' target='_blank'>Made with React.js, Redux, Flexbox and Material UI.</a> This site only supports recent versions of Chrome, Firefox, and <del>IE11</del> MS Edge. Yes, I'm aware this is a super contrived example created soley to prove that I've worked with React. :)</small></p>
 				</footer>
 			</main>
 		);

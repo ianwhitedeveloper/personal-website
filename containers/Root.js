@@ -11,10 +11,17 @@ import App from './App';
 let temporaryInitialState = {
   projects: [
     {
-      title: 'UPS Houston',
-      description: 'Sole developer for this project. Worked collaboratively  with art, account and creative departments to bring this campaign to life. Utilized Grunt, Vagrant, Yeoman, Bootstrap, Javascript and jQuery on the front end. Integrated backend database and authentication technologies including Silverpop and Linkedin REST APIs. Fully responsive and browser compliant to IE8. Completed project on time and to full client satisfaction. Upon completion of this project, I created a Yeoman generator for the UPS development team so that future projects of this scope could be more quickly and efficiently developed. Code can be found here: https://github.com/ianwhitedeveloper/generator-webapp-vagrant',
-      url: 'https://houston.ups.com',
-      imgSrc: '../assets/images/houston.jpg',
+      title: '7 Election',
+      description: 'Principal front end developer for the 2016 7 Election website. A partnership with The Onion all but guaranteed a large userbase. I created this site from scratch in the very tight deadline of 2.5 weeks. I was given mobile/desktop PSD comps and from that made a fully responsive site cross browser tested supporting back to IE10. All Javascript logic is written in ES6 (ECMA 2016) and completely modularized leveraging Browserify to bundle and transpile the code for the browser.  Heavy utilization of the following design patterns: Promises, Observer, Module. Other tech I used: stylus, gulp, jQuery 3.0, Google Map API (heavily customized), ES6 Promise Debounce, Babel, Browser Sync, Event Emitter 2, and Notie.',
+      url: 'https://www.7election.com/results/',
+      imgSrc: '../assets/images/7election.jpg',
+      likes: 0
+    },
+    {
+      title: 'PHLUR LP',
+      description: 'This was a project I took on as contract work. Very quick turnaround (less than 9 hrs total). I was tasked with taking an existing landing page and polishing the details to pixel perfection utilizing professional PSD design comps. Logically rearranged media queries for a fully responsive site experience. In addition to provided development services I consulted the client in front end best practices as well as assisted in deploying to Amazon S3. Tech I used in this project: gulp, Browser Sync, and stylus. (NOTE: Due to quick turnaround, my tablet device CSS was not deployed to the currently live site as of this date. I will remove this message when the client uploads the final code).',
+      url: 'http://landing.phlur.com/ad/retargeting/1/',
+      imgSrc: '../assets/images/phlur.jpg',
       likes: 0
     },
     {
@@ -23,13 +30,6 @@ let temporaryInitialState = {
 ,
       url: 'https://welcome.ups.com/#article=home',
       imgSrc: '../assets/images/ups-welcome.jpg',
-      likes: 0
-    },
-    {
-      title: 'UPS mDot',
-      description: 'Principal front end developer/maintainer of UPS mdot site - a website utilized by many thousands of users each month. Parse creative specs numbering hundreds of pages to develop and maintain semantic HTML markup and interactivity leveraging Grunt, Bower, jQuery, and Bootstrap to be handed off to UPS back end engineers. Work has been routinely delivered on or before project deadlines.',
-      url: 'https://m.ups.com/mDot/',
-      imgSrc: '../assets/images/mdot.png',
       likes: 0
     },
     {

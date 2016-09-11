@@ -6,12 +6,12 @@ const {Card, CardMedia, CardText, CardTitle, CardActions, FlatButton} = mui;
 
 const styles = {
 	project: {
-		display: 'flex', 
+		display: 'flex',
 		flexWrap: 'wrap'
 	},
 	cardActions: {
-		display: 'flex', 
-		flexDirection: 'row', 
+		display: 'flex',
+		flexDirection: 'row',
 		justifyContent: 'center'
 	},
 	cardText: {
@@ -31,7 +31,7 @@ export default class OpenSourceProject {
 				    <img src={project.imgSrc} />
 				  </CardMedia>
 				  <CardActions style={styles.cardActions}>
-						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit!' />
+						<FlatButton secondary={true} linkButton={true} target='_blank' href={project.url} label='Visit' />
 				  </CardActions>
 				  <CardText className='project_description' style={styles.cardText}>
 				    {project.description}
