@@ -20,6 +20,7 @@
     "react-dom": "^0.1.0",
     "react-redux": "^1.0.1",
     "react-sticky": "^2.5.2",
+    "react-tap-event-plugin": "^1.0.0",
     "redux": "^1.0.1"
   },
   "devDependencies": {

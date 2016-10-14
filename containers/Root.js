@@ -20,7 +20,7 @@ let temporaryInitialState = {
     {
       title: 'PHLUR LP',
       description: 'This was a project I took on as contract work. Very quick turnaround (less than 9 hrs total). I was tasked with taking an existing landing page and polishing the details to pixel perfection utilizing professional PSD design comps. Logically rearranged media queries for a fully responsive site experience. In addition to provided development services I consulted the client in front end best practices as well as assisted in deploying to Amazon S3. Tech I used in this project: gulp, Browser Sync, and stylus. (NOTE: Due to quick turnaround, my tablet device CSS was not deployed to the currently live site as of this date. I will remove this message when the client uploads the final code).',
-      url: 'http://landing.phlur.com/ad/retargeting/1/',
+      url: '/assets/images/phlur.jpg',
       imgSrc: '../assets/images/phlur.jpg',
       likes: 0
     },
