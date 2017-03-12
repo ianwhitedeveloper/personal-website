@@ -12,7 +12,8 @@ const styles = {
 	cardActions: {
 		display: 'flex',
 		flexDirection: 'row',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		textAlign: 'center'
 	},
 	cardText: {
 		textAlign: 'center'
