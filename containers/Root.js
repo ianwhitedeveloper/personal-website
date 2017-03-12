@@ -11,6 +11,13 @@ import App from './App';
 let temporaryInitialState = {
   projects: [
     {
+      title: 'Homeaway Node Seo Landing Pages',
+      description: 'I am part of a small team tasked with rewriting a very important SEO focused web app from Express.js to Hapi.js. Main focus on modernizing, optimizing and modularizing all aspects of the project from the Node.js API> Node.js backend -> UI front end code.',
+      url: 'https://www.homeaway.com/d/1/virginia-beach',
+      imgSrc: '../assets/images/nodeslp.jpg',
+      likes: 0
+    },
+    {
       title: 'Beauty and the Beast LP',
       description: `Principal front end developer for the 2017 Beauty and the Beast Homeaway Landing Page. I was tasked with creating this Landing Page in a short amount of time from scratch. I worked closely and successfully coordinated with several teams including UX, marketing, analytics, and dev-ops. This was a very expensive and prominent campaign that turned out very well and went above and beyond the client's expectations. Tech stack included: Grunt, Handlbars, Require.js, jQuery, Less, NPM, Wistia.`,
       url: 'https://www.homeaway.com/lp/disney/',
@@ -29,14 +36,6 @@ let temporaryInitialState = {
       description: 'This was a project I took on as contract work. Very quick turnaround (less than 9 hrs total). I was tasked with taking an existing landing page and polishing the details to pixel perfection utilizing professional PSD design comps. Logically rearranged media queries for a fully responsive site experience. In addition to provided development services I consulted the client in front end best practices as well as assisted in deploying to Amazon S3. Tech I used in this project: gulp, Browser Sync, and stylus.',
       url: '/assets/images/phlur.jpg',
       imgSrc: '../assets/images/phlur.jpg',
-      likes: 0
-    },
-    {
-      title: 'UPS New Customer Welcome LP-US',
-      description: 'Responsible for implementing redesign of UPS New Customer Welcome US landing page. WordPress, Bootstrap, Vagrant, Apache, Modernizr.'
-,
-      url: 'https://welcome.ups.com/#article=home',
-      imgSrc: '../assets/images/ups-welcome.jpg',
       likes: 0
     },
   ],
@@ -89,7 +88,12 @@ let temporaryInitialState = {
     {title: 'HTML5/CSS 3', show: true},
     {title: 'Ajax and API’s', show: true},
     {title: 'Git', show: true},
-    {title: 'SVN', show: true}
+    {title: 'SVN', show: true},
+    {title: 'Hapi.js', show: true},
+    {title: 'TeamCity', show: true},
+    {title: 'Gitlab', show: true},
+    {title: 'Docker', show: true},
+    {title: 'Splunk', show: true},
   ]
 };
 
