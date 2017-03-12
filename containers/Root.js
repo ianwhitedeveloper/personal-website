@@ -12,7 +12,7 @@ let temporaryInitialState = {
   projects: [
     {
       title: 'Beauty and the Beast LP',
-      description: `Principal front end developer for the 2017 Beauty and the Beast Homeaway Landing Page. I was tasked with creating this Landing Page in a short amount of time from scratch. I worked closely and successfully coordinated with several teams including UX, marketing, analytics, and dev-ops. This was a very expensive and prominent campaign that turned out very well and went above and beyond the client's expectations. Tech stake included: Grunt, Handlbars, Require.js, jQuery, Less, NPM, Wistia.`,
+      description: `Principal front end developer for the 2017 Beauty and the Beast Homeaway Landing Page. I was tasked with creating this Landing Page in a short amount of time from scratch. I worked closely and successfully coordinated with several teams including UX, marketing, analytics, and dev-ops. This was a very expensive and prominent campaign that turned out very well and went above and beyond the client's expectations. Tech stack included: Grunt, Handlbars, Require.js, jQuery, Less, NPM, Wistia.`,
       url: 'https://www.homeaway.com/lp/disney/',
       imgSrc: '../assets/images/batb.jpg',
       likes: 0
